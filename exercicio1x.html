@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercicio 1</title>
+        <link rel="stylesheet" href="padrao.css">
+    </head>
+    <body>
+        <h1>Vamos calcular a area de um quadrado</h1>
+        <label for="txtLado">Lado:</label>
+        <input type="text" id="txtLado" maxlength="3"/>
+        <input type="button" value="Calcular" onclick="calcula()"/>
+        <br/>
+        <span id="resultado" class="txtResultado"></span>
+        <script>
+            function calcula(){
+                let lado=document.getElementById('txtLado').value;
+                let area = lado*lado;
+                document.getElementById('resultado').innerHTML += "O valor da area é :"+ area;
+            }
+        </script>
+    </body>
+</html>
